@@ -5,3 +5,45 @@ body{
     justify-content: center;
     min-height: 100vh;
 }
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.arrow{
+    height: 150px;
+    cursor: pointer;
+    color: slategrey;
+}
+.right{
+    transform: rotate(180deg);
+}
+.frame{
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.btn-selector{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid slategrey;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
