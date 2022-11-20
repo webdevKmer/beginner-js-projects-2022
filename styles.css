@@ -43,7 +43,6 @@ body{
     gap: 2rem;
     align-items: center;
     justify-content: center;
-    display: none;
 }
 .wrong{
     color: red;
@@ -59,4 +58,7 @@ body{
     cursor: pointer;
     border: none;
     border-radius: .25rem;
+}
+.hidden{
+    display: none;
 }
