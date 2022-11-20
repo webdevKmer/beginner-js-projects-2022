@@ -1,53 +1,62 @@
-body{
-    background-color: lightsteelblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.container{
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.game{
+    height: 100vh;
+}
+.content{
+    padding: 4rem;
+}
+.content h1{
+    margin-bottom: 2rem;
+}
+.answer{
+    margin-bottom: 1rem;
+}
+.answer input{
+    margin-right: .5rem;
+}
+.submit{
+    width: 100%;
+    padding: 2rem 0;
+    background-color: purple;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+.results{
+    height: 100vh;
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-.top{
-    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    display: none;
 }
-.arrow{
-    height: 150px;
+.wrong{
+    color: red;
+}
+.correct{
+    color: green;
+}
+.play{
+    padding: 1rem 2rem;
+    background-color: purple;
+    color: white;
+    font-size: 2rem;
     cursor: pointer;
-    color: slategrey;
-}
-.right{
-    transform: rotate(180deg);
-}
-.frame{
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-}
-.slider{
-border: 1px solid magenta;
-display: flex;
-transition: all 1s ease;
-}
-.image{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
-}
-.btn-selector{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: 1px solid slategrey;
-}
-.bottom{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+    border: none;
+    border-radius: .25rem;
 }
